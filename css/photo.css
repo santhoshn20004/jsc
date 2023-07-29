@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #002e5f;
+    position: relative;
+    letter-spacing: .2rem;
+}
+
+.heading::before, .heading::after, .clients .section-header h2::before, .clients .section-header h2::after, .section-head h1::before, .section-head h1::after, .testimonials .section-header h2::before, .testimonials .section-header h2::after, .section-head-1 h4::before, .section-head-1 h4::after{
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: .4rem solid #002e5f;
+    border-left: .4rem solid #002e5f;
+}
+
+.faq .heading::before, .faq .heading::after{
+    border-top: .4rem solid #00bfff;
+    border-left: .4rem solid #00bfff;
+}
+
+.heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
+    top: 5.8rem;
+    left: -2rem;
+}
+
+.heading::after, .clients .section-header h2::after, .section-head h1::after, .testimonials .section-header h2::after, .section-head-1 h4::after{
+    bottom: -.5rem;
+    right: -2rem;
+    transform: rotate(180deg);
+}
+
+.heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
+    top: 5.8rem;
+    left: -2rem;
+}
+, .clients 
+    bottom: -.5rem;
+    right: -2rem;
+    transform: rotate(180deg);
+}
+
+.clients {
+    position: relative;
+    padding: 90px 0;
+    text-align: center;
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+}
+
+.clients .section-header p {
+    padding-bottom: 10px;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.clients img {
+    max-width: 100%;
+    opacity: 1;
+    transition: 0.3s;
+    padding: 15px 0;
+}
+
+.clients img:hover {
+    opacity: .5;
+}
+
+.clients .owl-nav,
+.clients .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.clients .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.clients .owl-dot.active {
+    background-color: #4F84C4;
+}    
+
