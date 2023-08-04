@@ -15,16 +15,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.example.com'; // Replace with your SMTP host
+        $mail->Host       = 'officialsanthosh.n2004@gmail.com'; // Replace with your SMTP host
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'your_smtp_username'; // Replace with your SMTP username
-        $mail->Password   = 'your_smtp_password'; // Replace with your SMTP password
+        $mail->Username   = 'santhoshn'; // Replace with your SMTP username
+        $mail->Password   = 'santhosh@1234'; // Replace with your SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587; // Use appropriate SMTP port
 
         // Recipients
-        $mail->setFrom('your_email@example.com', 'Your Name'); // Replace with your email and name
-        $mail->addAddress('receiver@example.com'); // Replace with the email address where you want to receive the user's message
+        $mail->setFrom('officialsanthosh.n2004@gmail.com', 'santhoshN'); // Replace with your email and name
+        $mail->addAddress('sandy7708234949@gmail.com'); // Replace with the email address where you want to receive the user's message
 
         // Content
         $mail->isHTML(false);
