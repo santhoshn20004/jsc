@@ -128,7 +128,38 @@ body{
     right: -2rem;
     transform: rotate(180deg);
 }
+.about{
+    min-height: 55vh;
+    width: 100vw;
+    top: -3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    line-height: 10rem;
+}
 
+.about .row{
+    line-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+}
+
+.about .row .content{
+    text-align: center;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: black;
+}
+
+.about .row .content p{
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0;
+}
 
 .footer {
     position: relative;
