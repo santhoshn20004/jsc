@@ -733,7 +733,7 @@ body{
 		.contact-map
 		{
 			width: 100%;
-			height: auto;
+			height: 100%;
 			flex: 50%;
 		}
 		.contact-map iframe
