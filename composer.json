@@ -1,13 +1,13 @@
 {
-    "name": "uddhav/itcompany",
+    "name": "santhosh/jscgroups",
     "autoload": {
         "psr-4": {
-            "Uddhav\\Itcompany\\": "src/"
+            "santhosh\\jscgroups\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "It Company"
+            "name": "JSC GROUPS"
         }
     ],
     "require": {
