@@ -6,8 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 require('./vendor/autoload.php');
 require 'mailingvariables.php';
 
-$mail_reciever_email = "officialsanthosh.n2004@gmail.com";
-mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $attachment = false){
+function mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $attachment = false) {
 
     $mail = new PHPMailer();
     $mail->isSMTP();
@@ -28,21 +27,20 @@ mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $attachment =
 
     $mail->setFrom($GLOBALS['mail_sender_email'], $GLOBALS['mail_sender_name']);
 
-    $mail->addAddress($mail_reciever_email,  $mail_reciever_name);
+    $mail->addAddress("officialsanthosh.n2004@gmail.com", "Company"); // Update recipient email and name here
 
     $mail->Subject = 'Someone Contacted You!';
 
-    $mail->isHTML($isHtml = true );
+    $mail->isHTML($isHtml = true);
 
     $mail->msgHTML($mail_msg);
 
-
-    if($attachment !== false){
+    if ($attachment !== false) {
         $mail->AddAttachment($attachment);
     }
-    
+
     $mail->AltBody = 'This is a plain-text message body';
- 
+
     if (!$mail->send()) {
         return false;
     } else {
