@@ -894,7 +894,7 @@ body{
             left: 0;
             bottom: 0;
             height: 0;
-            width: 50px;
+            width: auto;
             border-bottom: 2px solid #ffffff;
         }
         
