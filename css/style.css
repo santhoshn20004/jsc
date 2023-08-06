@@ -1,5 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/* Default styles for all screen sizes */
+.heading, .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4 {
+    font-size: 3.5rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    width: 25rem;
+}
+
+/* Styles for phone */
+@media (max-width: 767px) {
+    .heading, .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4 {
+        font-size: 2rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* Styles for PC */
+@media (min-width: 768px) {
+    .heading, .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4 {
+        font-size: 3.5rem;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 25rem;
+    }
+}
+
+
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
