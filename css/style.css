@@ -1355,3 +1355,37 @@ body{
             width: 100%;
         }
 }
+
+
+
+
+/* Styles for screens smaller than 576px (e.g., phones) */
+@media (max-width: 575.98px) {
+  /* Adjustments for small screens */
+  /* Example: Update font sizes, margins, paddings, or hide elements */
+}
+
+/* Styles for screens between 576px and 767px (e.g., larger phones and small tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Adjustments for medium-sized screens */
+  /* Example: Modify layout, resize elements, or adjust spacing */
+}
+
+/* Styles for screens between 768px and 991px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Adjustments for tablets */
+  /* Example: Rearrange columns, adjust font sizes, or change positioning */
+}
+
+/* Styles for screens between 992px and 1199px (e.g., larger tablets and small desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Adjustments for larger tablets and small desktops */
+  /* Example: Optimize layout, adjust margins, or change element sizes */
+}
+
+/* Styles for screens 1200px and above (e.g., desktops and larger screens) */
+@media (min-width: 1200px) {
+  /* Adjustments for large screens */
+  /* Example: Fine-tune layout, increase font sizes, or adjust widths */
+}
+
