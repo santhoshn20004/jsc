@@ -107,14 +107,14 @@ body{
     z-index: 100;
     position: fixed;
 }
-@media (max-width: 767px) {
+
 .header .logo img{
     width: 130%;
     height: 3rem;
     top: 0;
     left: 0;
 }
-}
+
 .header .navbar ul{
     list-style-type: none;
     display: flex;
@@ -146,7 +146,7 @@ body{
     font-size: 3rem;
     display: none;
 }
-@media (max-width: 767px) {
+
 .home{
     min-height: 100vh;
     width: 100vw;
@@ -160,7 +160,6 @@ body{
     padding: 0 1rem;
     position: relative;
     overflow: hidden !important;
-}
 }
 
 .home h1{
