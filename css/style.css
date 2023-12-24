@@ -107,14 +107,14 @@ body{
     z-index: 100;
     position: fixed;
 }
-
+@media (max-width: 767px) {
 .header .logo img{
     width: 130%;
     height: 3rem;
     top: 0;
     left: 0;
 }
-
+}
 .header .navbar ul{
     list-style-type: none;
     display: flex;
